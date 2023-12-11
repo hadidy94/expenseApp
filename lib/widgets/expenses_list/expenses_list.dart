@@ -21,7 +21,8 @@ class ExpensesList extends StatelessWidget {
         },
         background: Container(
           padding: const EdgeInsets.only(right: 20.0),
-          color: Colors.red,
+          color: Theme.of(context).colorScheme.error.withOpacity(0.75),
+          margin: const EdgeInsets.all(16),
           child: const Align(
             alignment: Alignment.centerRight,
             child: Text('Delete',
